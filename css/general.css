@@ -193,7 +193,7 @@
 /* whole html file */
 * {
   font-family: "Edu SA Beginner", cursive;
-  font-weight: var(--fw-5);
+  /* font-weight: var(--fw-5); */
 }
 
 .container-1920 {
@@ -388,7 +388,7 @@ footer a:hover img {
   }
 
   .bg-mobile-dropdown-green-yellow {
-    background-color: var(--bg-mobile-dropdown-yellow) !important;
+    background-color: var(--bg-yellow-full ) !important;
   }
 
   .bg-dropdown-yellow-width {
