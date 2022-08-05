@@ -6,6 +6,7 @@ image{
 }
 .wd-50{
   width: 45%;
+  height: fit-content;
 }
 div p{
   font-size: 200%;
@@ -24,7 +25,7 @@ div p{
   }
   .bg {
     /* The image used */
-    background-image: url(../images/penanghill/penang-5230946_960_720.jpg);
+    background-image: url(../images/mountain_penang/penang-5230946_960_720.jpg);
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -36,8 +37,8 @@ div p{
 }
 .bg {
   /* The image used */
-  /* background-image: url(../images/penanghill/penang-5230946_960_720.jpg); */
-  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/penanghill/penang-5230946_960_720.jpg);
+  /* background-image: url(../images/mountain_penang/penang-5230946_960_720.jpg); */
+  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/mountain_penang/penang-5230946_960_720.jpg);
   /* Full height */
   min-height: 970px; 
 
@@ -71,19 +72,19 @@ div p{
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 #shop1{
-  background-image: url(../images/penanghill/qchyi7wcku0tniqukwde.webp);
+  background-image: url(../images/mountain_penang/qchyi7wcku0tniqukwde.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #shop2{
-  background-image: url(../images/penanghill/DSC_0079.JPG);
+  background-image: url(../images/mountain_penang/DSC_0079.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #shop3{
-  background-image: url(../images/penanghill/109337102_1580324648798137_2152564181306334125_o.jpg);
+  background-image: url(../images/mountain_penang/109337102_1580324648798137_2152564181306334125_o.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
