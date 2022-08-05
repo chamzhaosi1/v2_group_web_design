@@ -37,9 +37,13 @@
   --fs-t1-md: 4rem;
   --fs-t1-sm: 2.5rem;
 
-  --fs-t2-3xl: 3rem;
-  --fs-t2-xxl: 1.5rem;
-  --fs-t2-sm: calc(0.7rem + 0.5vw);
+  --fs-t2-3xl: 4rem;
+  --fs-t2-xxl: 2.5rem;
+  --fs-t2-sm: 2rem;
+
+  --fs-st2-3xl: 3rem;
+  --fs-st2-xxl: 1.5rem;
+  --fs-st2-sm: calc(0.7rem + 0.5vw);
 
   --fs-t3-3xl: 3rem;
   --fs-t3-xxl: 2rem;
@@ -71,6 +75,11 @@
   font-weight: var(--fw-5) !important;
 }
 
+.t2{
+  font-size: var(--fs-t2-xxl) !important;
+  font-weight: var(--fw-6) !important;
+}
+
 /* body subtitle */
 .t3{
   font-weight: var(--fw-6) !important;
@@ -94,7 +103,7 @@
 
 /* slider location link, body content */
 .pin-t2{
-  font-size: var(--fs-t2-xxl) !important;
+  font-size: var(--fs-st2-xxl) !important;
 }
 
 .pin-i1{
@@ -111,6 +120,10 @@
 @media screen and (min-width : 2800px) {
   .t1{
     font-size: var(--fs-t1-3xl) !important;
+  }
+
+  .t2{
+    font-size: var(--fs-t2-3xl) !important;
   }
 
   .t3{
@@ -130,11 +143,11 @@
   }
 
   .pin-t2{
-    font-size: var(--fs-t2-3xl) !important;
+    font-size: var(--fs-st2-3xl) !important;
   }
 
   .pin-i1{
-    font-size: var(--fs-i1-3xl) !important;
+    font-size: var(--fs-si1-3xl) !important;
   }
 }
 
@@ -144,7 +157,7 @@
   }
 
   .pin-t2{
-    font-size: var(--fs-t2-sm) !important;
+    font-size: var(--fs-st2-sm) !important;
   }
 
   .pin-i1{
@@ -155,6 +168,10 @@
 @media screen and (max-width : 576px) {
   .t1{
     font-size: var(--fs-t1-sm) !important;
+  }
+
+  .t2{
+    font-size: var(--fs-t2-sm) !important;
   }
 
   .p1{
