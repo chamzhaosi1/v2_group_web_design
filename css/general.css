@@ -12,18 +12,160 @@
   --fc-black: black;
   --fc-white: white;
 
-  /* width */
-  --mx-w :1920px;
+  /* max-width / height*/
+  --mx-w: 1920px;
+  --mx-h: 1072px;
+
+  /* min-width/ height */
+  --mn-w5: 500px;
 
   /* font-weight */
   --fw-4: 400;
   --fw-5: 500;
   --fw-6: 600;
   --fw-7: 700;
+
+  /* font-size */
+  --fs-top-foot-3xl: 1.5rem;
+  --fs-top-foot-xxl: 18px;
+
+  --fs-drop-3xl: 1.7rem;
+  --fs-drop-xxl: 1.25rem;
+
+  --fs-t1-3xl: 8rem;
+  --fs-t1-xxl: 6rem;
+  --fs-t1-md: 4rem;
+  --fs-t1-sm: 2.5rem;
+
+  --fs-t2-3xl: 3rem;
+  --fs-t2-xxl: 1.5rem;
+  --fs-t2-sm: calc(0.7rem + 0.5vw);
+
+  --fs-t3-3xl: 3rem;
+  --fs-t3-xxl: 2rem;
+
+  --fs-p1-3xl: 4rem;
+  --fs-p1-xxl: 2.25rem;
+  --fs-p1-sm: 1.5rem;
+
+  --fs-p2-3xl: 3rem;
+  --fs-p2-xxl: 1.8rem;
+
+  --fs-p3-3xl: 1.8rem;
+  --fs-p3-xxl: 1.5rem;
+
+  --fs-i1-3xl: 3rem;
+  --fs-i1-xxl: 1.5rem;
+  --fs-i1-sm: calc(0.7rem + 0.5vw);
+
 }
 /* ############################################################################ */
-/* below is the class of the text size and background colour*/
+/* Below is the class of the text size and background colour size and other*/
 /* ############################################################################ */
+
+/* slide-show or background center title and content */
+
+/* slider title body title */
+.t1{
+  font-size: var(--fs-t1-xxl) !important;
+  font-weight: var(--fw-5) !important;
+}
+
+/* body subtitle */
+.t3{
+  font-weight: var(--fw-6) !important;
+  font-size: var(--fs-t3-xxl) !important;
+}
+
+/* slider content */
+.p1{
+  font-size: var(--fs-p1-xxl) !important;
+}
+
+/* body subtitle content */
+.p2{
+  font-size: var(--fs-p2-xxl) !important;
+}
+
+/* specify for beach pulau img inside content */
+.p3{
+  font-size: var(--fs-p3-xxl) !important;
+}
+
+/* slider location link, body content */
+.pin-t2{
+  font-size: var(--fs-t2-xxl) !important;
+}
+
+.pin-i1{
+  font-size: var(--fs-i1-xxl) !important;
+}
+
+/* slider / background height */
+.s_bg-h{
+  min-height: var(--mn-w5) !important;
+  max-height: var(--mx-h) !important;
+  height: 100vw;
+}
+
+@media screen and (min-width : 2800px) {
+  .t1{
+    font-size: var(--fs-t1-3xl) !important;
+  }
+
+  .t3{
+    font-size: var(--fs-t3-3xl) !important;
+  }
+
+  .p1{
+    font-size: var(--fs-p1-3xl) !important;
+  }
+
+  .p2{
+    font-size: var(--fs-p2-3xl) !important;
+  }
+
+  .p3{
+    font-size: var(--fs-p3-3xl) !important;
+  }
+
+  .pin-t2{
+    font-size: var(--fs-t2-3xl) !important;
+  }
+
+  .pin-i1{
+    font-size: var(--fs-i1-3xl) !important;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .t1{
+    font-size: var(--fs-t1-md) !important;
+  }
+
+  .pin-t2{
+    font-size: var(--fs-t2-sm) !important;
+  }
+
+  .pin-i1{
+    font-size: var(--fs-i1-sm) !important;
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .t1{
+    font-size: var(--fs-t1-sm) !important;
+  }
+
+  .p1{
+    font-size: var(--fs-p1-sm) !important;
+  }
+
+  .pin-i1{
+    font-size: var(--fs-i1-sm) !important;
+  }
+}
+
 
 
 
@@ -87,7 +229,11 @@
 }
 
 .fs-top-nav-vm {
-  font-size: 18px !important;
+  font-size: var(--fs-top-foot-xxl) !important;
+}
+
+.fs-drown_menu{
+  font-size: var(--fs-drop-xxl) !important;
 }
 
 .text-light-lg {
@@ -151,7 +297,7 @@ footer {
 }
 
 footer ul a {
-  font-size: 1.25rem !important;
+  font-size: var(--fs-top-foot-xxl) !important;
   text-decoration: none;
   color: var(--fc-white);
 }
@@ -176,14 +322,28 @@ footer a:hover img {
 
 #west_malaysia {
   left: 30%;
-  bottom: 85px;
+  bottom: 84px;
   width: 15%;
 }
 
 #east_malaysia {
   right: 24%;
-  bottom: 85px;
+  bottom: 75px;
   width: 20%;
+}
+
+@media screen and (min-width : 2800px) {
+  .fs-top-nav-vm{
+    font-size: var(--fs-top-foot-3xl) !important;
+  }
+
+  .fs-drown_menu{
+    font-size: var(--fs-drop-3xl) !important;
+  }
+
+  footer ul a {
+    font-size: var(--fs-top-foot-3xl) !important;
+  }
 }
 
 @media screen and (min-width: 1920px) {
