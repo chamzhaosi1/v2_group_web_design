@@ -25,10 +25,7 @@ div p{
   .bg {
     /* The image used */
     background-image: url(../images/penanghill/penang-5230946_960_720.jpg);
-    
-    /* Full height */
-    min-height: 400px; 
-  
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
