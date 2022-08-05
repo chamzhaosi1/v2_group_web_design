@@ -40,21 +40,6 @@ h1 {
     font-size: calc(1.325rem + .9vw);
 }
 
-.btn {
-    --bs-btn-padding-x: 2rem !important;
-}
-
-.btn-green {
-    background-color: var(--bg-btn-green) !important;
-}
-
-.btn-lightBlue {
-    background-color: var(--bg-btn-lightBlue) !important;
-}
-
-.btn-brown {
-    background-color: var(--bg-btn-brown) !important;
-}
 
 .carousel-caption-middle {
     position: absolute;

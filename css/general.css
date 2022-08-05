@@ -7,6 +7,10 @@
   --bg-dark-orange: #ef6c58aa;
   --bg-dark-orange-hover: #ef6c58;
   --bg-light-orange: #f3d1bf;
+  --bg-btn-green: #519259E5;
+  --bg-btn-lightBlue: #66BFBFE5;
+  --bg-btn-brown: #CCA035E5;
+  --bg-btn-blue: #5899E7E5;
 
   /* font-color */
   --fc-black: black;
@@ -184,9 +188,6 @@
 }
 
 
-
-
-
 /* ############################################################################ */
 /* Below is the class of header and footer attribute and element */
 /* ############################################################################ */
@@ -243,6 +244,22 @@
 
 .bg-dropdown-yellow-width {
   width: 230px !important;
+}
+
+.btn {
+  --bs-btn-padding-x: 1.5rem !important;
+}
+
+.btn-green {
+  background-color: var(--bg-btn-green) !important;
+}
+
+.btn-lightBlue {
+  background-color: var(--bg-btn-lightBlue) !important;
+}
+
+.btn-brown {
+  background-color: var(--bg-btn-brown) !important;
 }
 
 .fs-top-nav-vm {
