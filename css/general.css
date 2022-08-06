@@ -274,6 +274,9 @@
   color: var(--fc-white) !important;
 }
 
+.ms-f{
+  margin-left: 3.5rem !important;
+}
 
 /* backtop button */
 #back-top {
@@ -323,8 +326,9 @@
 
 /* footer */
 footer {
-  background-image: url(../images/general/Rectanglefooter-round.png);
-  background-size: cover;
+  background-image: url(../images/general/malaysia.png), url(../images/general/Rectanglefooter-round.png); 
+  background-size: 40%, cover;
+  background-position: 50% 55%, 0% -0.5%;
   background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 70px;
@@ -354,16 +358,10 @@ footer a:hover img {
   bottom: 50px;
 }
 
-#west_malaysia {
-  left: 30%;
-  bottom: 84px;
-  width: 15%;
-}
-
-#east_malaysia {
-  right: 24%;
-  bottom: 75px;
-  width: 20%;
+@media screen and (min-width : 2000px) {
+  footer {
+    background-size: 35%, cover;
+  }
 }
 
 @media screen and (min-width : 2800px) {
@@ -378,13 +376,16 @@ footer a:hover img {
   footer ul a {
     font-size: var(--fs-top-foot-3xl) !important;
   }
+
 }
 
-@media screen and (min-width: 1920px) {
-  /* footer */
-  #east_malaysia,
-  #west_malaysia {
-    display: none;
+@media screen and (max-width: 1200px) {
+  .ms-f{
+    margin-left: 0.8vw !important;
+  }
+
+  footer {
+    background-position-y: 55%, -2.5%;
   }
 }
 
@@ -392,6 +393,11 @@ footer a:hover img {
   /* footer */
   footer {
     padding-top: 0px;
+  }
+
+  footer {
+    background-image: none, url(../images/general/Rectanglefooter-round.png); 
+    background-position-y: 0%;
   }
 }
 
@@ -420,6 +426,9 @@ footer a:hover img {
     font-weight: var(--fw-7) !important;
   }
 
+  .ms-f{
+    margin-left: 0vw !important;
+  }
   /* footer */
   #line {
     width: 85%;
