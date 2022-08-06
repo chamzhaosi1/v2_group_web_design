@@ -9,22 +9,9 @@
     filter: brightness(70%); 
 }
 
-.slidetshow-fixed-heigh{
-    min-height: 500px;
-}
-
 .slideshow-content-position{
     top: 0;
     left: 60px;
-}
-
-.slideshow-content-header{
-    font-size: 75px;
-    font-weight: 600;
-}
-
-.slideshow-content-paragraph{
-    font-size: calc(1.325rem + .9vw);
 }
 
 .carousel-control-prev {
@@ -142,6 +129,7 @@
     }
 }
 
+
 @media screen and (min-width: 2500px) {
     .padding-image-top{
         padding-top: 2vw;
@@ -152,6 +140,9 @@
         padding-top: 8vw;
         padding-bottom: 2vw;
     }
+}
+
+@media screen and (max-width: 992px) {
 }
 
 @media screen and (max-width: 768px) {
@@ -238,6 +229,10 @@
     transform: translateY(-1rem) rotateZ(5deg);
 }
 
+.hover{
+    transform: translateY(-1rem) rotateZ(5deg);
+}
+
 .card:hover~.card,
 .card:focus-within~.card {
     transform: translateX(8rem);
@@ -268,18 +263,18 @@
     }
 
     .card:not(:first-child) {
-        margin-top: -5rem;
+        margin-top: -2rem;
         margin-left: 0rem;
     }
 
     .card:hover~.card,
     .card:focus-within~.card {
-        transform: translateY(8rem);
+        transform: translateY(5rem);
         transform: translateX(0rem);
     }
 
     .card:hover,
     .card:focus-within{
-        transform: translateY(-8rem) rotateZ(5deg);
+        transform: translateY(-5rem) rotateZ(5deg);
     }
 }
