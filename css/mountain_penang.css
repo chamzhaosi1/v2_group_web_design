@@ -1,6 +1,6 @@
 body, html {
   background-color: #D2DDCD !important;
-  background-image: url(../images/penanghill/Polygon18.png);
+  background-image: url(../images/mountain_penang/Polygon18.png);
 }
 image{
   width: 100%;
@@ -8,7 +8,6 @@ image{
 }
 .wd-50{
   width: 45%;
-  height: fit-content;
 }
 .texthover:hover{
   color: rgb(85, 210, 210);
