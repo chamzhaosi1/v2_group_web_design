@@ -12,17 +12,6 @@
     text-align: justify;
 }
 
-h1 {
-    font-size: calc(18px + 1.5vw);
-}
-
-.text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: calc(10px + 1.5vw);
-    line-height: 1.2;
-}
-
 .image-fill-black {
     filter: brightness(60%);
 }
@@ -30,16 +19,6 @@ h1 {
 .slidetshow-fixed-heigh {
     min-height: 500px;
 }
-
-.slideshow-content-header {
-    font-size: 75px;
-    font-weight: 600;
-}
-
-.slideshow-content-paragraph {
-    font-size: calc(1.325rem + .9vw);
-}
-
 
 .carousel-caption-middle {
     position: absolute;
@@ -58,8 +37,8 @@ h1 {
 #first-content {
     background-image: url(../images/home/Vector_1.png);
     background-repeat: no-repeat;
-    background-size: 57% ;
-    background-position: 70% 59%;
+    background-size: 57%;
+    background-position: 75% 69%;
     width: 80%;
     height: 100vh;
     margin-top: 80px;
@@ -69,6 +48,27 @@ h1 {
     position: relative;
     width: 100%;
 }
+
+.icon-info {
+    font-size: 30px;
+    --fa-animation-duration: 1s;
+    --fa-beat-fade-opacity: 0.7;
+    --fa-beat-fade-scale: 1.075;
+    z-index: 2;
+}
+
+#icon-info_1 {
+    color: var(--bg-toolsTip-orange);
+    right: 0%;
+    top: 5%;
+}
+
+#icon-info_2 {
+    color: var(--bg-toolsTip-lightGreen);
+    right: 7%;
+    bottom: -240%;
+}
+
 
 #first-content-bg1 {
     width: 60%;
@@ -112,7 +112,7 @@ h1 {
     height: 220vh;
 }
 
-#second-content-h1{
+#second-content-h1 {
     z-index: 2;
 }
 
@@ -123,13 +123,13 @@ h1 {
 
 #waterfall {
     width: 60%;
-    top: 32vw;
+    top: 27vw;
     left: 0%;
 }
 
 #river {
     width: 60%;
-    top: 58vw;
+    top: 53vw;
     right: 0;
 }
 
@@ -141,17 +141,17 @@ h1 {
 
 #s-leaf {
     width: 20%;
-    top: 80vw;
+    top: 75vw;
     right: -6%;
 }
- 
+
 #third-content-text {
-    width: 60%;  
+    width: 85%;
 }
 
 #third-content {
     background-image: url(../images/home/newera.png);
-    background-position-x: -10% ;
+    background-position-x: -10%;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -171,27 +171,31 @@ h1 {
         height: 85vh;
         background: none;
     }
-  }
+}
 
-  @media screen and (min-width : 3600px) {
+@media screen and (min-width : 3600px) {
     #first-content {
         height: 50vh;
     }
-  }
+}
 
 @media screen and (max-width: 1200px) {
+    #first-content {
+        background-position: 75% 57%;
+    }
+
     #waterfall {
         top: 35vw;
     }
-    
+
     #river {
         top: 55vw;
     }
-    
+
     #b-leaf {
         top: -22%;
     }
-    
+
     #s-leaf {
         top: 82vw;
     }
@@ -226,28 +230,29 @@ h1 {
     #waterfall {
         top: 50vw;
     }
-    
+
     #river {
         top: 70vw;
     }
-    
+
     #b-leaf {
         top: 10%;
         left: 6%;
     }
-    
+
     #s-leaf {
         top: 90vw;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .slideshow-content-header {
-        font-size: calc(14px + 5.8vw);
-    }
-
     #first-content {
         margin-top: 50px;
+    }
+
+    #icon-info_1 {
+        right: 0%;
+        top: 10%;
     }
 
     #second-content-p1 {
@@ -260,36 +265,33 @@ h1 {
         top: 65vw;
         left: 0%;
     }
-    
+
     #river {
         width: 70%;
         top: 90vw;
         right: 0;
     }
-    
+
     #b-leaf {
         width: 100%;
         top: 50%;
         left: 0%;
     }
-    
+
     #s-leaf {
         top: 115vw;
         right: -6%;
     }
 
     #third-content {
-        background-position-y: 70% ;
+        background-position-y: 70%;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .slideshow-content-header {
-        font-size: 35px
-    }
-
-    .slideshow-content-paragraph {
-        font-size: calc(1rem + .9vw);
+    #icon-info_1 {
+        right: 20%;
+        top: 35%;
     }
 
     .carousel-caption-middle {
@@ -303,19 +305,13 @@ h1 {
         padding-top: 10rem;
         padding-bottom: 10rem;
         color: rgb(255, 255, 255);
-        backdrop-filter: blur(8px);
         text-align: center;
     }
 
     #first-content {
         margin-top: 50px;
-        height: 92vh;
+        height: 100vh;
     }
-
-    #second-content {
-        height: 160vh;
-    }
-    
 
     #chineseTemple {
         left: 50%;
@@ -336,21 +332,21 @@ h1 {
         left: 0;
         right: 0;
     }
-    
+
     #river {
-        width:90%;
+        width: 90%;
         top: 130vw;
         margin: auto;
         left: 0;
         right: 0;
     }
-    
+
     #b-leaf {
         width: 100%;
         top: 40%;
         left: -20%;
     }
-    
+
     #s-leaf {
         width: 30%;
         top: 200vw;
@@ -358,25 +354,82 @@ h1 {
     }
 
     #third-content {
-        background-position-y: 70% ;
+        background-position-y: 70%;
     }
 
     .row {
-        --bs-gutter-x: 0 !important ;}
+        --bs-gutter-x: 0 !important;
+    }
 }
 
 @media screen and (max-width: 475px) {
+    #first-content {
+        height: 93vh;
+    }
+
+    #icon-info_1 {
+        right: 20%;
+        top: 57%;
+    }
+
+    #b-leaf {
+        display: none;
+    }
+
+    #s-leaf {
+        top: 210%;
+    }
+
     #waterfall {
         width: 90%;
-        top: 95vw;
+        top: 135vw;
         margin: auto;
         left: 0;
         right: 0;
     }
-    
+
     #river {
-        width:90%;
-        top: 160vw;
+        width: 90%;
+        top: 200vw;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #first-content {
+        height: 120vh;
+    }
+
+    #second-content {
+        height: 180vh;
+    }
+
+    #icon-info_1 {
+        right: 20%;
+        top: 57%;
+    }
+
+    #b-leaf {
+        display: none;
+    }
+
+    #s-leaf {
+        display: none;
+    }
+
+    #waterfall {
+        width: 90%;
+        top: 175vw;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    #river {
+        width: 90%;
+        top: 240vw;
         margin: auto;
         left: 0;
         right: 0;
@@ -384,25 +437,28 @@ h1 {
 }
 
 @media screen and (min-width: 3800px) {
-    .text {
-        font-size: 60px;
-    }
 
     #second-content {
         background-color: #DCF5C8;
         height: 80vh;
     }
 
-    #second-content-p1 {
-        width: 80%;
+    #second-content-h1 {
+        margin: auto;
     }
+
+    #second-content-p1 {
+        width: 90%;
+        margin: auto;
+    }
+
 
     #waterfall {
         width: 60%;
         top: 17vw;
         left: 0%;
     }
-    
+
     #river {
         width: 60%;
         top: 24vw;
@@ -413,9 +469,7 @@ h1 {
         top: 29vw;
         right: -20%;
     }
-    
- }
- 
-@media screen and (min-width: 2500px) {
 
- }
+}
+
+@media screen and (min-width: 2500px) {}
