@@ -240,235 +240,75 @@
     .icon-info_1{
         top: -60px;
     }
-
-    
 }
 
-
-/* card css design, copy from my bootstrap_test folder file*/
-.container-fluid .card
-{   
-    max-width: 450px;
-    height: 250px;
-    margin: 45px 20px;
-    padding: 20px 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    background-color: var(--card-yellow);
-    transition: 0.8s ease-in-out;
+.container{
+    transform-style: preserve-3d;
 }
 
-.container-fluid .card_1:hover
-{   
-    height: 500px;
-    transition: 0.8s ease-in-out;
-}
-
-.container-fluid .card_2:hover
-{
-    height: 550px;
-    transition: 0.8s ease-in-out;
-}
-
-.container-fluid .card_3:hover
-{
-    height: 580px;
-    transition: 0.8s ease-in-out;
-}
-
-.container-fluid .card .imgContainer
-{
+.container .box{
     position: relative;
-    border-radius: 20px;
-    width:400px;
-    top:-40px;
-    left:10px;
-    z-index: 1;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    width: 380px;
+    height: 300px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
 }
-.container-fluid .card .imgContainer img
-{
+
+.container .box .body{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 4px;
-}
-.container-fluid .card .content
-{
-    position: relative;
-    margin-top: -10px;
-    padding: 0px 15px;
-    text-align: center;
-    color:#111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 1s ease-in-out;
-}
-.container-fluid .card:hover .content
-{
-    visibility: visible;
-    opacity: 1;
-    transition: 1s ease-in-out;
-}
-
-.hover{
-    transform: translateY(0.5rem);
-    /* transform: scale(1.05); */
-}
-
-@media screen and (max-width:1060px) {
-    .container-fluid .card
-    {
-        width: 390px;
-        height: 200px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 350px;
-        left:6px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 500px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 540px;
-    }
-
-}
-
-@media screen and (max-width:940px) {
-    .container-fluid .card
-    {
-        width: 310px;
-        height: 170px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 270px;
-        left:6px;
-    }
-
-    .container-fluid .card_1:hover
-    {   
-        height: 440px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 470px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 510px;
-    }
-
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
 }
 
 
-@media screen and (max-width:773px) {
-    .container-fluid .card
-    {
-        width: 270px;
-        height: 120px;
-    }
 
-    .container-fluid .card .imgContainer
-    {
-        width:230px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 540px;
-    }
-    
+.container .box .body .imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
 }
 
-@media screen and (max-width:700px) {
-    .container-fluid .card
-    {
-        width: 440px;
-        height: 250px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 400px;
-    }
-    .container-fluid .card_1:hover
-    {   
-        height: 500px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 530px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 560px;
-    }
-    
+.container .box .body .imgContainer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-@media (max-width: 500px){
-    .container-fluid .card
-    {
-        width: 380px;
-        height: 220px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 340px;
-    }
-
-    .container-fluid .card_1:hover
-    {   
-        height: 450px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 480px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 515px;
-    }
+.container .box .body .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
 }
 
-@media (max-width: 430px){
-    .container-fluid .card
-    {
-        width: 300px;
-        height: 150px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 260px;
-    }
-
-    .container-fluid .card_1:hover
-    {   
-        height: 420px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 450px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 485px;
-    }
+.container .box:hover .body{
+    transform: rotateY(180deg);
 }
 
+.container .box .body .content div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background-color: var(--card-yellow);
+    transform: translateZ(100px);
+}
+
+.container .box .body .content div h3{
+    letter-spacing: 1px;
+}
