@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function(){
       return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
     function checkCardHover(){
       let card = document.getElementsByClassName('card')
       let check; 
