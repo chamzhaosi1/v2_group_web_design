@@ -8,6 +8,7 @@
     --bg-toolsTip-orange: #F0BB62F2;
     --bg-toolsTip-lightGreen: #a6dc98f1;
     --bg-toolsTip-lightBlue: #88f3f3e2;
+    --bd-popover-green: rgb(20, 181, 199);
     --bg-info2-lightGreen: #93dd80f1;
     --bg-second-content: #BDF1F1;
     --card-yellow: rgb(235, 228, 148);
@@ -163,6 +164,30 @@
     left: -5%;
 }
 
+.custom-popover .popover-header {
+    font-weight: bold;
+}
+
+.custom-popover{
+    --bs-popover-border-color: var(--bd-popover-green) !important; 
+    --bs-popover-header-font-size: 1.5rem !important;
+    --bs-popover-font-size: 1.25rem !important;
+}
+
+#earth {
+    width: 25%;
+    top: -60%;
+    right: 0%;
+}
+
+@media screen and (min-width : 1700px) {
+    #earth {
+        width: 20%;
+        top: -30%;
+        right: 0%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #second-content {
         margin-top: 150px;
@@ -194,6 +219,12 @@
         width: 40%;
         top: -10%;
         left: -5%;
+    }
+
+    #earth {
+        width: 40%;
+        top: -60%;
+        right: 0%;
     }
 }
 
