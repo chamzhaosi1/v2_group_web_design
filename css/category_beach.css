@@ -4,6 +4,7 @@
     --card-yellow: rgba(244, 238, 169, 1);
     --card-gray: rgba(116, 116, 116, 0.2);
     --bg-btn-blue: #66BFBF;
+    --tooltip-blue: rgba(102, 191, 191, 0.9);
 }
 
 .image-fill-black{
@@ -69,14 +70,14 @@
 }
 
 .tooltip-inner {
-    background-color: var(--tooltip-green) !important;
+    background-color: var(--tooltip-blue) !important;
     color: black !important;
     font-size: calc(20px + 0.5vw);
     font-weight: 600;
 }
 
 .tooltip-arrow {
-    --bs-tooltip-bg: var(--tooltip-green);
+    --bs-tooltip-bg: var(--tooltip-blue);
 }
 
 .bg-bottom{
@@ -246,7 +247,7 @@
 /* card css design, copy from my bootstrap_test folder file*/
 .container-fluid .card
 {   
-    max-width: 450px;
+    max-width: 430px;
     height: 250px;
     margin: 45px 20px;
     padding: 20px 15px;
@@ -277,7 +278,7 @@
 {
     position: relative;
     border-radius: 20px;
-    width:400px;
+    width:380px;
     top:-40px;
     left:10px;
     z-index: 1;
@@ -370,7 +371,7 @@
 @media screen and (max-width:773px) {
     .container-fluid .card
     {
-        width: 270px;
+        width: 268px;
         height: 120px;
     }
 
@@ -389,6 +390,7 @@
 @media screen and (max-width:700px) {
     .container-fluid .card
     {
+        max-width: 440px;
         width: 440px;
         height: 250px;
     }
