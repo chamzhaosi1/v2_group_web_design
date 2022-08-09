@@ -4,6 +4,7 @@
     --bg-btn-lightBlue: #66BFBFE5;
     --bg-btn-brown: #CCA035E5;
     --bg-btn-blue: #5899E7E5;
+    --bg-btn-card: #A5BD46;
     --bg-toolsTip-orange: #F0BB62F2;
     --bg-toolsTip-lightGreen: #a6dc98f1;
     --bg-toolsTip-lightBlue: #88f3f3e2;
@@ -11,11 +12,15 @@
     --bg-second-content: #BDF1F1;
     --card-yellow: rgb(235, 228, 148);
     --card-white: rgba(226, 226, 224, 0.633);
-    --bg-card: linear-gradient(4deg, var(--card-yellow), var(--card-white)), #F4EEA9;;
+    --bg-card: linear-gradient(4deg, var(--card-yellow), var(--card-white)), #F4EEA9;
 }
 
 .text-justify {
     text-align: justify;
+}
+
+.btn-card {
+    background: var(--bg-btn-card) !important;
 }
 
 /* Card Animation */
@@ -35,21 +40,31 @@
     height: 400px;
     transition: 0.7s;
 }
+
 .container-fluid .card .imgContainer
 {
     position: relative;
     width:250px;
-    height:220px;
-    top:-50px;
+    height:170px;
+    top:-60px;
     left:2px;
     z-index: 1;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
 }
+
+.container-fluid .card:hover .imgContainer
+{
+    height:220px;
+    transition: 1s ease;
+}
+
 .container-fluid .card .imgContainer img
 {
     max-width: 100%;
     border-radius: 4px;
 }
+
 .container-fluid .card .content
 {
     position: relative;
@@ -60,13 +75,14 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: 0.5s ease-in-out;
+    transition: 1s ease;
 }
 .container-fluid .card:hover .content
 {
     visibility: visible;
     opacity: 1;
-    margin-top: -10px;
+    margin-top: -50px;
+    pointer-events: auto;
     transition-delay: 0.2s;
  }
 
