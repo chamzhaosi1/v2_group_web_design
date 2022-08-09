@@ -3,6 +3,7 @@
     --tooltip-green: #8FCD80;
     --card-yellow: rgba(244, 238, 169, 1);
     --card-gray: rgba(116, 116, 116, 0.2);
+    --bg-btn-blue: #66BFBF;
 }
 
 .image-fill-black{
@@ -14,14 +15,14 @@
     right: 80px;
 }
 
-.carousel-control-prev {
+.carousel-control-next {
     width: 30px !important ;
-    margin-left: 4%;
+    margin-right: 4%;
 }
 
 
-.bg-btn-green{
-    background-color: var(--bg-btn-green) !important;
+.bg-btn-blue{
+    background-color: var(--bg-btn-blue) !important;
 }
 
 .bg-desert-blue{
@@ -43,37 +44,24 @@
 
 .padding-image-bwl{
     padding-top: 20vw;
-    padding-bottom: 5vw;
+    padding-bottom: 0vw;
 }
 
 .content_body{
-    padding: 100px 0px;
+    padding: 100px 0px 50px 0px;
 }
 
-.bg-triangle-green h1{
+.bg-desert-yellow h1{
     font-size: calc(18px + 1.5vw);
 }
 
-.bg-triangle-green h2{
+.bg-desert-yellow h2{
     font-size: calc(10px + 1.5vw);
 }
 
-.bg-triangle-yellow h1{
-    font-size: calc(20px + 3vw);
-}
 
-.bg-triangle-yellow h2{
+.padding-image-bwl h2{
     font-size: calc(30px + 1vw);
-}
-
-.decoration_1-position{
-    right: 0px;
-    top: -180px;
-}
-
-.decoration_2-position{
-    left: 5%;
-    top: 100px;
 }
 
 #decoration_2{
@@ -92,30 +80,34 @@
 }
 
 .bg-bottom{
-    background-image: url(../images/category_mountain/bottom-bg.png);
+    background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../images/category_beach/bg_bottom_image.png);
     background-repeat: no-repeat;
     background-size: cover; 
-}
-
-.round-shape{
-    width: 30%;
-    height: 950%;
-}
-
-.round-shape_d2{
-    width: 20%;
-    height: 1000%;
+    background-position: 0% 60%;
+    background-attachment: fixed;
 }
 
 .third_container_image{
     z-index: 2;
 }
 
+.decoration_1-position{
+    right: 0px;
+    top: -200px;
+}
+
+.decoration_2-position{
+    left: 5%;
+    top: 100px;
+}
+
 .icon-info_1{
     font-size: 50px;
     color: lightgray;
-    right: 22%;
-    top: 320%;
+    /* right: 22%;
+    top: 320%; */
+    top: 0;
+    right: 25%;
     z-index: 2;
 }
 
@@ -123,9 +115,10 @@
     font-size: 50px;
     color: lightgray;
     top: 120px;
-    left: 28%;
+    left: 31%;
     z-index: 2;
 }
+
 
 @media screen and (min-width: 3800px) {
     #second_container h1{
@@ -136,16 +129,16 @@
         font-size: 50px;
     }
 
-    .bg-triangle-yellow h1{
+    .container p{
+        font-size: 0.8vw;
+    }
+
+    .bg-desert-yellow h1{
         font-size: calc(10px + 1.3vw);
     }
 
-    .bg-triangle-yellow p{
+    .bg-desert-yellow p{
         font-size: calc(10px + 1vw) !important;
-    }
-
-    .container p{
-        font-size: 0.8vw;
     }
 }
 
@@ -162,20 +155,13 @@
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .decoration_1-position{
+        top: -100px;
+    }
+}
+
 @media screen and (max-width: 992px) {
-    .round-shape_d2{
-        width: 30%;
-        height: 800%;
-    }
-
-    .icon-info_1{
-        top: 180%;
-    }
-
-    .icon-info_2{
-        left: 32%;
-    }
-
     .img-h{
         height: 110% !important;
     }
@@ -199,27 +185,13 @@
         padding: 20px 0px;
     }
 
-    .round-shape{
-        width: 50%;
-        height: 500%;
-    } 
-
     .icon-info_1{
-        top: 0px;
+        right: 20%;
+
     }
 }
 
 @media screen and (max-width: 576px) {
-    .round-shape{
-        width: 40%;
-        height: 400%;
-    }
-
-    .round-shape_d2{
-        width: 30%;
-        height: 500%;
-    }
-
     .icon-info_2{
         top: -5px;
         font-size: 35px;
@@ -239,10 +211,6 @@
 @media screen and (max-width: 440px) {
     .padding-image-bwl{
         padding-top: 7vw;
-    }
-
-    .round-shape{
-        height: 250%;
     }
 
     .carousel_1 img{
@@ -265,96 +233,240 @@
         content: url(../images/category_beach/slider_img_5_500px.jpg);
     }
 
+    .decoration_1-position{
+        top: -120px;
+    }
+
     .icon-info_1{
-        top: -80px;
-        right: 30px;
-    } 
+        top: -60px;
+    }
 }
 
 
 /* card css design, copy from my bootstrap_test folder file*/
-.container {
-    overflow: auto;
+.container-fluid .card
+{   
+    max-width: 450px;
+    height: 250px;
+    margin: 45px 20px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    background-color: var(--card-yellow);
+    transition: 0.8s ease-in-out;
 }
 
-.cards {
-    overflow: auto;
-    min-height: 550px;
+.container-fluid .card_1:hover
+{   
+    height: 500px;
+    transition: 0.8s ease-in-out;
 }
 
-.card {
-    background: linear-gradient(4deg, var(--card-yellow), var(--card-gray)), #F4EEA9;
-    width: 18rem;
-    min-width: 30% !important;
-    box-shadow: -5px 5px 25px #0000009d;
-    padding: 20px;
-    transition: all .3s ease-in-out;
+.container-fluid .card_2:hover
+{
+    height: 550px;
+    transition: 0.8s ease-in-out;
 }
 
-.card .fs-5 {
-    font-size: 1.15rem !important;
+.container-fluid .card_3:hover
+{
+    height: 580px;
+    transition: 0.8s ease-in-out;
 }
 
-.card a {
-    color: #fff;
-    text-decoration: none;
+.container-fluid .card .imgContainer
+{
+    position: relative;
+    border-radius: 20px;
+    width:400px;
+    top:-40px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
-
-.card:not(:first-child) {
-    margin-left: -8rem;
+.container-fluid .card .imgContainer img
+{
+    width: 100%;
+    border-radius: 4px;
 }
-
-.card:hover,
-.card:focus-within {
-    transform: translateY(-1rem) rotateZ(5deg);
+.container-fluid .card .content
+{
+    position: relative;
+    margin-top: -10px;
+    padding: 0px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.container-fluid .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s ease-in-out;
 }
 
 .hover{
-    transform: translateY(-1rem) rotateZ(3deg);
+    transform: translateY(0.5rem);
+    /* transform: scale(1.05); */
 }
 
-.card:hover~.card,
-.card:focus-within~.card {
-    transform: translateX(8rem);
+@media screen and (max-width:1060px) {
+    .container-fluid .card
+    {
+        width: 390px;
+        height: 200px;
+    }
+
+    .container-fluid .card .imgContainer
+    {
+        width: 350px;
+        left:6px;
+    }
+
+    .container-fluid .card_2:hover
+    {
+        height: 500px;
+    }
+
+    .container-fluid .card_3:hover
+    {
+        height: 540px;
+    }
+
 }
 
-.card .designation {
-    display: inline;
-    border-radius: 10px;
-    padding: 4px 10px;
-    border: 1px solid #ddd;
+@media screen and (max-width:940px) {
+    .container-fluid .card
+    {
+        width: 310px;
+        height: 170px;
+    }
+
+    .container-fluid .card .imgContainer
+    {
+        width: 270px;
+        left:6px;
+    }
+
+    .container-fluid .card_1:hover
+    {   
+        height: 440px;
+    }
+
+    .container-fluid .card_2:hover
+    {
+        height: 470px;
+    }
+
+    .container-fluid .card_3:hover
+    {
+        height: 510px;
+    }
+
 }
 
 
-@media screen and (min-width: 768px) {
-    .w-30p{
-        width: 30% !important;
+@media screen and (max-width:773px) {
+    .container-fluid .card
+    {
+        width: 270px;
+        height: 120px;
+    }
+
+    .container-fluid .card .imgContainer
+    {
+        width:230px;
+    }
+
+    .container-fluid .card_3:hover
+    {
+        height: 540px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .container-fluid .card
+    {
+        width: 440px;
+        height: 250px;
+    }
+
+    .container-fluid .card .imgContainer
+    {
+        width: 400px;
+    }
+    .container-fluid .card_1:hover
+    {   
+        height: 500px;
+    }
+
+    .container-fluid .card_2:hover
+    {
+        height: 530px;
+    }
+
+    .container-fluid .card_3:hover
+    {
+        height: 560px;
+    }
+    
+}
+
+@media (max-width: 500px){
+    .container-fluid .card
+    {
+        width: 380px;
+        height: 220px;
+    }
+
+    .container-fluid .card .imgContainer
+    {
+        width: 340px;
+    }
+
+    .container-fluid .card_1:hover
+    {   
+        height: 450px;
+    }
+
+    .container-fluid .card_2:hover
+    {
+        height: 480px;
+    }
+
+    .container-fluid .card_3:hover
+    {
+        height: 515px;
     }
 }
 
-
-@media screen and (max-width: 576px){
-    .card{
-        margin-left: 15px !important;
+@media (max-width: 430px){
+    .container-fluid .card
+    {
+        width: 300px;
+        height: 150px;
     }
 
-    .w-30p{
-        width: 90% !important;
+    .container-fluid .card .imgContainer
+    {
+        width: 260px;
     }
 
-    .card:not(:first-child) {
-        margin-top: -2rem;
-        margin-left: 0rem;
+    .container-fluid .card_1:hover
+    {   
+        height: 420px;
     }
 
-    .card:hover~.card,
-    .card:focus-within~.card {
-        transform: translateY(5rem);
-        transform: translateX(0rem);
+    .container-fluid .card_2:hover
+    {
+        height: 450px;
     }
 
-    .card:hover,
-    .card:focus-within{
-        transform: translateY(-5rem) rotateZ(3deg);
+    .container-fluid .card_3:hover
+    {
+        height: 485px;
     }
 }
+
