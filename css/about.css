@@ -8,11 +8,75 @@
     --bg-toolsTip-lightGreen: #a6dc98f1;
     --bg-toolsTip-lightBlue: #88f3f3e2;
     --bg-info2-lightGreen: #93dd80f1;
+    --bg-second-content: #BDF1F1;
+    --card-yellow: rgb(235, 228, 148);
+    --card-white: rgba(226, 226, 224, 0.633);
+    --bg-card: linear-gradient(4deg, var(--card-yellow), var(--card-white)), #F4EEA9;;
 }
 
 .text-justify {
     text-align: justify;
 }
+
+/* Card Animation */
+
+.container-fluid .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    background: var(--bg-card);
+    transition: 0.3s ease-in-out;
+}
+.container-fluid .card:hover
+{
+    height: 400px;
+    transition: 0.7s;
+}
+.container-fluid .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:220px;
+    top:-50px;
+    left:2px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container-fluid .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container-fluid .card .content
+{
+    position: relative;
+    margin-top: -180px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+.container-fluid .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.2s;
+ }
+
+@media (max-width: 330px){
+    .container-fluid .card .imgContainer{
+        left: -2px;
+    }
+}
+
+/* ----------------------------------- */
 
 #first-content{
     width: 90%;
@@ -72,12 +136,29 @@
     --bs-tooltip-bg: var(--bg-toolsTip-lightBlue);
 }
 
+#second-content {
+    background-color: var(--bg-second-content);
+    margin-top: 100px;
+}
+
+#NEUC_logo {
+    width: 30%;
+    top: -17%;
+    left: -5%;
+}
+
 @media screen and (max-width: 1200px) {
-   
+    #second-content {
+        margin-top: 150px;
+    }
 }
 
 @media screen and (max-width: 1149px) {
- 
+    #NEUC_logo {
+        width: 30%;
+        top: -15%;
+        left: -5%;
+    }
 }
 
 @media screen and (max-width: 993px) {
@@ -87,6 +168,16 @@
 @media screen and (max-width: 768px) {
     #first-content-p2 p{
         width: 65%;
+    }
+
+    #second-content {
+        margin-top: 50px;
+    }
+
+    #NEUC_logo {
+        width: 40%;
+        top: -10%;
+        left: -5%;
     }
 }
 
@@ -105,6 +196,17 @@
 
     #first-content-p2 p{
         width: 100%;
+    }
+
+    #second-content {
+        margin-top: 100px;
+    }
+
+    #NEUC_logo {
+        width: 38%;
+        top: -5%;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 
