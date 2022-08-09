@@ -1,0 +1,117 @@
+:root {
+    --bg-gradient-black: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    --bg-btn-green: #519259E5;
+    --bg-btn-lightBlue: #66BFBFE5;
+    --bg-btn-brown: #CCA035E5;
+    --bg-btn-blue: #5899E7E5;
+    --bg-toolsTip-orange: #F0BB62F2;
+    --bg-toolsTip-lightGreen: #a6dc98f1;
+    --bg-toolsTip-lightBlue: #88f3f3e2;
+    --bg-info2-lightGreen: #93dd80f1;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+#first-content{
+    width: 90%;
+}
+
+#first-content-text {
+    flex: 0.55;
+}
+
+#first-content-img {
+    flex: 0.4;
+}
+
+#first-content-img img{
+    width: 80%;
+}
+
+#first-content-img-mobile img{
+    width: 80%;
+}
+ 
+#icon-info_mobile {
+    color: var(--bg-toolsTip-orange);
+    font-size: 30px;
+    left: 10%;
+    top: -10%;
+    z-index: 2;
+}
+
+#icon-info_1 {
+    color: var(--bg-toolsTip-orange);
+    font-size: 30px;
+    left: 10%;
+    top: 5%;
+    z-index: 2;
+}
+
+.custom-tooltip .tooltip-inner {
+    --bs-tooltip-bg: var(--bg-toolsTip-orange);
+    color: black !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.custom-tooltip .tooltip-arrow {
+    --bs-tooltip-bg: var(--bg-toolsTip-orange);
+}
+
+.custom-tooltip2 .tooltip-inner {
+    --bs-tooltip-bg: var(--bg-toolsTip-lightBlue);
+    color: black !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.custom-tooltip2 .tooltip-arrow {
+    --bs-tooltip-bg: var(--bg-toolsTip-lightBlue);
+}
+
+@media screen and (max-width: 1200px) {
+   
+}
+
+@media screen and (max-width: 1149px) {
+ 
+}
+
+@media screen and (max-width: 993px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    #first-content-p2 p{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #icon-info_mobile {
+        color: var(--bg-toolsTip-orange);
+        font-size: 30px;
+        left: 10%;
+        top: 5%;
+        z-index: 2;
+    }
+
+    #first-content-img-mobile img{
+        width: 70%;
+    }
+
+    #first-content-p2 p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    
+}
+
+@media screen and (max-width: 440px) {
+  
+}
