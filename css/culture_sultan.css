@@ -9,6 +9,19 @@
   justify-content: center;
 }
 
+.background1 {
+  background-image: url(../images/culture_sultan/b1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.background2 {
+  background-image: url(../images/culture_sultan/b2.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 440px) {
   .carousel-1 img {
     content: url(../images/culture_sultan/m1-500.jpg);
