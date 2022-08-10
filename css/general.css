@@ -360,7 +360,7 @@ footer {
   background-image: url(../images/general/malaysia.png),
     url(../images/general/Rectanglefooter-round.png);
   background-size: 40%, cover;
-  background-position: 50% 55%, 0% -0.5%;
+  background-position: 52% 55%, 0% -0.5%;
   background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 70px;
@@ -416,7 +416,7 @@ footer a:hover img {
   }
 
   footer {
-    background-position-y: 53%, -2.5%;
+    background-position-y: 55%, -2.5%;
   }
 }
 

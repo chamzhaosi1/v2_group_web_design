@@ -332,7 +332,6 @@
 
 .hover{
     transform: translateY(0.5rem);
-    /* transform: scale(1.05); */
 }
 
 @media screen and (max-width:1060px) {
