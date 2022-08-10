@@ -1,5 +1,8 @@
 body, html {
     background-color: #D2DDCD !important;
+    
+  }
+  .bg1{
     background-image: url(../images/mountain_penang/Polygon18.png),url(../images/mountain_penang/Polygon15.png);
     background-position: 50%, 200%;
     background-size: 120%;
