@@ -42,11 +42,13 @@
     width: 38rem;
 }
 
-.right-ellipse h2,p {
+.right-ellipse h2 {
     z-index: 1;
+    width: 30rem;
 }
 
 .right-ellipse p {
+    z-index: 1;
     width: 30rem;
 }
 /* Activities */
