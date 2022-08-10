@@ -42,11 +42,13 @@
     width: 38rem;
 }
 
-.right-ellipse h2,p {
+.right-ellipse h2 {
     z-index: 1;
+    width: 30rem;
 }
 
 .right-ellipse p {
+    z-index: 1;
     width: 30rem;
 }
 /* Activities */
@@ -62,6 +64,10 @@
 /* Details */
 .detail {
     background-color: rgba(215, 255, 55, 0.1);
+}
+
+.detail .row img{
+    border: 3px solid #009c43;
 }
 /* Details */
 
