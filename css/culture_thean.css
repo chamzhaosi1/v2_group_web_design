@@ -1,0 +1,10 @@
+#pin {
+  bottom: 5%;
+  left: 5%;
+}
+
+.timg {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
