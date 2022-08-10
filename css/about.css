@@ -87,6 +87,10 @@
     transition-delay: 0.2s;
  }
 
+ .container-xl .card.hover{
+    transform: translateY(5px);
+ }
+
 @media (max-width: 330px){
     .container-xl .card .imgContainer{
         left: -2px;
