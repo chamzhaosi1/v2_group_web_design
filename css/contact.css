@@ -7,7 +7,7 @@
 }
 
 #second-content {
-    height: 100vh;
+    padding: 100px 0px;
     background-image: url(../images/contact/KL.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,7 +19,9 @@
     max-width: 40%;
     margin: auto;
     padding: 30px 50px;
+    background-color: rgba(188, 187, 187, 0.226);
     backdrop-filter: blur(10px);
+    border-radius: 25px;
 }
 
 ::placeholder {
@@ -83,14 +85,101 @@ input[type=tel].full {
     height: 650px !important;
 }
 
+#fourth-content {
+    background: url(../images/contact/paper_bg.png);
+    margin-bottom: 100px;
+}
+
+#info {
+    width: 25%;
+    top: 10%;
+    right: 7%;
+}
+
+#contact-phone {
+    width: 65%;
+    margin-bottom: 100px;
+}
+
+#contact-email {
+    width: 55%;
+    margin-bottom: 100px;
+}
+
+#contact-locate {
+    width: 90%;
+}
+
+#contact-phone img{
+    width: 133px;
+    height: 133px;
+    margin-right: 90px;
+}
+
+#contact-email img{
+    width: 133px;
+    height: 133px;
+    margin-right: 90px;
+}
+
+#contact-locate img{
+    width: 133px;
+    margin-right: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+    #info {
+        width: 28%;
+        top: 20%;
+        right: 7%;
+    }
+
+    #contact-phone {
+        width: 90%;
+        margin-bottom: 100px;
+    }
+    
+    #contact-email {
+        width: 90%;
+        margin-bottom: 100px;
+    }
+    
+    #contact-locate {
+        width: 90%;
+    }
+}
+
+
 @media screen and (max-width: 992px) {
     #myForm {
         max-width: 80%;
     }
 }
 
+@media screen and (max-width: 768px) {
+    #contact-phone img{
+        width: 80px;
+        height: 80px;
+        margin-right: 50px;
+    }
+    
+    #contact-email img{
+        width: 80px;
+        height: 80px;
+        margin-right: 50px;
+    }
+    
+    #contact-locate img{
+        width: 80px;
+        margin-right: 50px;
+    }
+}
 
 @media screen and (max-width: 576px) {
+    #second-content {
+        padding: 0px;
+    }
+
     #myForm {
         max-width: 100%;
     }
