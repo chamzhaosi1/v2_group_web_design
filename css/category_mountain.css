@@ -97,18 +97,35 @@
 }
 
 .icon-info_1{
-    font-size: 50px;
-    color: lightgray;
-    right: 22%;
-    top: 350%;
+    font-size: 40px;
+    color: #f7e036;
+    right: 23%;
+    top: 380%;
     z-index: 2;
+    animation-name: info_icon_1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes info_icon_1{
+    0% {transform: scale(1); color: #f59236; right: 23%}
+    50% {transform: scale(1.1); color: #d1c62e; right: 22.5%}
+    100% {transform: scale(1); color: #f59236; right: 23%}
 }
 
 .icon-info_2{
-    font-size: 50px;
-    color: lightgray;
+    font-size: 40px;
     left: 28%;
     z-index: 2;
+    animation-name: info_icon_2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes info_icon_2{
+    0% {transform: scale(1); color: #f59236; left:28%}
+    50% {transform: scale(1.1); color: #d1c62e; left:28.5%}
+    100% {transform: scale(1); color: #f59236; left:28%}
 }
 
 @media screen and (min-width: 3800px) {

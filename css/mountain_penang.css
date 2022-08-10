@@ -1,6 +1,10 @@
-body, html {
+html,body {
   background-color: #D2DDCD !important;
+}
+.bg1{
   background-image: url(../images/mountain_penang/Polygon18.png);
+  background-position:left;
+  background-size: cover;
 }
 image{
   width: 100%;
