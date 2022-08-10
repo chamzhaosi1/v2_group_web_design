@@ -26,7 +26,7 @@
 
 /* Card Animation */
 
-.container-fluid .card
+.container-xl .card
 {
     max-width: 300px;
     height: 215px;
@@ -36,13 +36,13 @@
     background: var(--bg-card);
     transition: 0.3s ease-in-out;
 }
-.container-fluid .card:hover
+.container-xl .card:hover
 {
     height: 400px;
     transition: 0.7s;
 }
 
-.container-fluid .card .imgContainer
+.container-xl .card .imgContainer
 {
     position: relative;
     width:250px;
@@ -54,19 +54,19 @@
     transition: 0.3s ease;
 }
 
-.container-fluid .card:hover .imgContainer
+.container-xl .card:hover .imgContainer
 {
     height:220px;
     transition: 1s ease;
 }
 
-.container-fluid .card .imgContainer img
+.container-xl .card .imgContainer img
 {
     max-width: 100%;
     border-radius: 4px;
 }
 
-.container-fluid .card .content
+.container-xl .card .content
 {
     position: relative;
     margin-top: -180px;
@@ -78,7 +78,7 @@
     pointer-events: none;
     transition: 1s ease;
 }
-.container-fluid .card:hover .content
+.container-xl .card:hover .content
 {
     visibility: visible;
     opacity: 1;
@@ -88,7 +88,7 @@
  }
 
 @media (max-width: 330px){
-    .container-fluid .card .imgContainer{
+    .container-xl .card .imgContainer{
         left: -2px;
     }
 }
@@ -176,7 +176,7 @@
 
 #earth {
     width: 25%;
-    top: -60%;
+    top: -45%;
     right: 0%;
 }
 
