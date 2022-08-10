@@ -332,3 +332,12 @@
     letter-spacing: 0px;
 }
 
+.card{
+    background-color: transparent !important;
+    border-width: 0px !important;
+}
+
+.hover{
+    transform: scale(1.05);
+}
+
