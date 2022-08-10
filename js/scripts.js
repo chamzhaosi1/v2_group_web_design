@@ -82,3 +82,14 @@ function everyTime () {
 
   });
 }
+
+/* Fancybox */
+Fancybox.bind('[data-fancybox="gallery"]', {
+
+  Image: {
+    zoom: false,
+    click: false,
+    wheel: "slide",
+  },
+});
+/* Fancybox */

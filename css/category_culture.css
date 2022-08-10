@@ -21,6 +21,13 @@
     margin-right: 4%;
 }
 
+.btn{
+    border: var(--bg-btn-yellow) 2px solid !important;
+}
+
+.btn:hover{
+    border: white 2px solid !important;
+}
 
 .bg-btn-yellow{
     background-color: var(--bg-btn-yellow) !important;
@@ -309,6 +316,11 @@
 
 .container-fluid .box:hover .body{
     transform: rotateY(180deg);
+}
+
+.container-fluid .box:hover .body .imgContainer{
+    width: 0%;
+    transition: width 2s;
 }
 
 .container-fluid .box .body .content div{

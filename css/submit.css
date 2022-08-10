@@ -37,3 +37,9 @@
         left: 0px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    #earth {
+        width: 70%;
+    }
+}
