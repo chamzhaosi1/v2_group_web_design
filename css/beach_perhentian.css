@@ -1,7 +1,7 @@
 /* Showcase */
 .background {
     box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
-    background: url(../images/beach_pulau/beach-pulau-bg.png) no-repeat;
+    background: url(../images/beach_perhentian/background.png) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -42,11 +42,13 @@
     width: 38rem;
 }
 
-.right-ellipse h2,p {
+.right-ellipse h2 {
     z-index: 1;
+    width: 30rem;
 }
 
 .right-ellipse p {
+    z-index: 1;
     width: 30rem;
 }
 /* Activities */
@@ -62,6 +64,10 @@
 /* Details */
 .detail {
     background-color: rgba(215, 255, 55, 0.1);
+}
+
+.detail .row img{
+    border: 3px solid #009c43;
 }
 /* Details */
 
@@ -85,8 +91,6 @@
 }
 
 @media screen and (max-width: 575px) {        
-   
-    
     .activity .row {
         padding-top: 1rem;
     }

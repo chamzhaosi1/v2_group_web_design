@@ -21,6 +21,13 @@
     margin-right: 4%;
 }
 
+.btn{
+    border: var(--bg-btn-yellow) 2px solid !important;
+}
+
+.btn:hover{
+    border: white 2px solid !important;
+}
 
 .bg-btn-yellow{
     background-color: var(--bg-btn-yellow) !important;
@@ -311,6 +318,11 @@
     transform: rotateY(180deg);
 }
 
+.container-fluid .box:hover .body .imgContainer{
+    width: 0%;
+    transition: width 2s;
+}
+
 .container-fluid .box .body .content div{
     padding: 20px;
     background-color: var(--card-yellow);
@@ -318,5 +330,20 @@
 
 .container-fluid .box .body .content div h3{
     letter-spacing: 0px;
+}
+
+.card{
+    background-color: transparent !important;
+    border-width: 0px !important;
+    transition: 1s ease-in-out;
+    box-shadow: 0px 3px 3px 4px darkgray;
+}
+
+.card:hover{
+    box-shadow: none;
+}
+
+.hover{
+    transform: rotateY(15deg) ;
 }
 

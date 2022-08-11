@@ -19,6 +19,13 @@
     margin-left: 4%;
 }
 
+.btn{
+    border: var(--bg-btn-green) 2px solid !important;
+}
+
+.btn:hover{
+    border: white 2px solid !important;
+}
 
 .bg-btn-green{
     background-color: var(--bg-btn-green) !important;
