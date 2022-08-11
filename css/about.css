@@ -87,6 +87,10 @@
     transition-delay: 0.2s;
  }
 
+ .container-xl .card.hover{
+    transform: translateY(5px);
+ }
+
 @media (max-width: 330px){
     .container-xl .card .imgContainer{
         left: -2px;
@@ -206,7 +210,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #first-content-p2 p{
         width: 65%;
     }
@@ -224,7 +228,7 @@
     #earth {
         width: 40%;
         top: -60%;
-        right: 0%;
+        right: 0%
     }
 }
 

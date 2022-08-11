@@ -21,6 +21,13 @@
     margin-right: 4%;
 }
 
+.btn{
+    border: var(--bg-btn-yellow) 2px solid !important;
+}
+
+.btn:hover{
+    border: white 2px solid !important;
+}
 
 .bg-btn-yellow{
     background-color: var(--bg-btn-yellow) !important;
@@ -103,21 +110,39 @@
 }
 
 .icon-info_1{
-    font-size: 50px;
+    font-size: 40px;
     color: lightgray;
     /* right: 22%;
     top: 320%; */
     top: 30px;
     right: 20%;
     z-index: 2;
+    animation-name: info_icon_1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes info_icon_1{
+    0% {transform: scale(1); color: #f08b54; right: 20%}
+    50% {transform: scale(1.1); color: #d75bf0; right: 19.5%}
+    100% {transform: scale(1); color: #f08b54; right: 20%}
 }
 
 .icon-info_2{
-    font-size: 50px;
+    font-size: 40px;
     color: lightgray;
     top: 140px;
     left: 30%;
     z-index: 2;
+    animation-name: info_icon_2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes info_icon_2{
+    0% {transform: scale(1); color: #f08b54; left:30%}
+    50% {transform: scale(1.1); color: #d75bf0; left:30.5%}
+    100% {transform: scale(1); color: #f08b54; left:30%}
 }
 
 
@@ -214,23 +239,23 @@
     }
 
     .carousel_1 img{
-        content: url(../images/category_beach/slider_img_1_500px.jpg);
+        content: url(../images/category_culture/slider_img_1_500px.jpg);
     }
 
     .carousel_2 img{
-        content: url(../images/category_beach/slider_img_2_500px.jpg);
+        content: url(../images/category_culture/slider_img_2_500px.jpg);
     }
 
     .carousel_3 img{
-        content: url(../images/category_beach/slider_img_3_500px.jpg);
+        content: url(../images/category_culture/slider_img_3_500px.jpg);
     }
 
     .carousel_4 img{
-        content: url(../images/category_beach/slider_img_4_500px.jpg);
+        content: url(../images/category_culture/slider_img_4_500px.jpg);
     }
 
     .carousel_5 img{
-        content: url(../images/category_beach/slider_img_5_500px.jpg);
+        content: url(../images/category_culture/slider_img_5_500px.jpg);
     }
 
     .decoration_1-position{
@@ -242,21 +267,16 @@
     }
 }
 
-.container{
-    transform-style: preserve-3d;
-}
 
-.container .box{
+.container-fluid .box{
     position: relative;
-    width: 380px;
     height: 300px;
     margin: 20px;
-    transform-style: preserve-3d;
     perspective: 1000px;
     cursor: pointer;
 }
 
-.container .box .body{
+.container-fluid .box .body{
     position: absolute;
     top: 0;
     left: 0;
@@ -266,18 +286,15 @@
     transition: 0.9s ease;
 }
 
-
-
-.container .box .body .imgContainer{
+.container-fluid .box .body .imgContainer{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d;
 }
 
-.container .box .body .imgContainer img{
+.container-fluid .box .body .imgContainer img{
     position: absolute;
     top: 0;
     left: 0;
@@ -286,29 +303,47 @@
     object-fit: cover;
 }
 
-.container .box .body .content{
+.container-fluid .box .body .content{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #333;
+    background-color: var(--card-yellow);
     backface-visibility: hidden;
-    transform-style: preserve-3d;
     transform: rotateY(180deg);
 }
 
-.container .box:hover .body{
+.container-fluid .box:hover .body{
     transform: rotateY(180deg);
 }
 
-.container .box .body .content div{
-    transform-style: preserve-3d;
+.container-fluid .box:hover .body .imgContainer{
+    width: 0%;
+    transition: width 2s;
+}
+
+.container-fluid .box .body .content div{
     padding: 20px;
     background-color: var(--card-yellow);
-    transform: translateZ(100px);
 }
 
-.container .box .body .content div h3{
-    letter-spacing: 1px;
+.container-fluid .box .body .content div h3{
+    letter-spacing: 0px;
 }
+
+.card{
+    background-color: transparent !important;
+    border-width: 0px !important;
+    transition: 1s ease-in-out;
+    box-shadow: 0px 3px 3px 4px darkgray;
+}
+
+.card:hover{
+    box-shadow: none;
+}
+
+.hover{
+    transform: rotateY(15deg) ;
+}
+

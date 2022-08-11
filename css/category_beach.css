@@ -4,7 +4,7 @@
     --card-yellow: rgba(244, 238, 169, 1);
     --card-gray: rgba(116, 116, 116, 0.2);
     --bg-btn-blue: #66BFBF;
-    --tooltip-blue: rgba(102, 191, 191, 0.9);
+    --tooltip-blue: rgba(102, 191, 191, 1);
 }
 
 .image-fill-black{
@@ -21,6 +21,13 @@
     margin-right: 4%;
 }
 
+.btn{
+    border: var(--bg-btn-blue) 2px solid !important;
+}
+
+.btn:hover{
+    border: white 2px solid !important;
+}
 
 .bg-btn-blue{
     background-color: var(--bg-btn-blue) !important;
@@ -103,21 +110,37 @@
 }
 
 .icon-info_1{
-    font-size: 50px;
+    font-size: 40px;
     color: lightgray;
-    /* right: 22%;
-    top: 320%; */
     top: 0;
     right: 25%;
     z-index: 2;
+    animation-name: info_icon_1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes info_icon_1{
+    0% {transform: scale(1); color: #6f47d6; right: 25%}
+    50% {transform: scale(1.1); color: #2dcc3f; right: 24.5%}
+    100% {transform: scale(1); color: #6f47d6; right: 25%}
 }
 
 .icon-info_2{
-    font-size: 50px;
+    font-size: 40px;
     color: lightgray;
     top: 120px;
     left: 31%;
     z-index: 2;
+    animation-name: info_icon_2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes info_icon_2{
+    0% {transform: scale(1); color: #6f47d6; left: 31%}
+    50% {transform: scale(1.1); color: #2dcc3f; left: 31.5%}
+    100% {transform: scale(1); color: #6f47d6; left: 31%}
 }
 
 
@@ -309,7 +332,6 @@
 
 .hover{
     transform: translateY(0.5rem);
-    /* transform: scale(1.05); */
 }
 
 @media screen and (max-width:1060px) {
