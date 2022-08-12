@@ -17,7 +17,7 @@
   --fc-white: white;
 
   /* max-width / height*/
-  --mx-w: 1920px;
+  --mx-w: 1906px;
   --mx-h: 1072px;
 
   /* min-width/ height */
@@ -472,7 +472,7 @@ footer a:hover img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* top navbar */
   .bg-dropdown-yellow-green {
     background-color: var(--bg-green-transparent) !important;

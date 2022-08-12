@@ -14,6 +14,7 @@
     left: 60px;
 }
 
+
 .carousel-control-prev {
     width: 30px !important ;
     margin-left: 4%;
@@ -172,6 +173,51 @@
     }
 }
 
+@media screen and (min-width: 1501px) {
+     .carousel_1 img{
+        content: url(../images/category_mountain/categorie_slideshow_1_1906px.jpg)
+    }
+
+    .carousel_2 img{
+        content: url(../images/category_mountain/categorie_slideshow_2_1906px.jpg)
+    }
+
+    .carousel_3 img{
+        content: url(../images/category_mountain/categorie_slideshow_3_1906px.jpg)
+    }
+
+    .carousel_4 img{
+        content: url(../images/category_mountain/categorie_slideshow_4_1906px.jpg)
+    }
+
+    .carousel_5 img{
+        content: url(../images/category_mountain/categorie_slideshow_5_1906px.jpg)
+    }
+}
+
+/* @media screen and (max-width: 1500px) {
+    .carousel_1 img{
+       content: url(../images/category_mountain/categorie_slideshow_1_1500px.jpg)
+   }
+
+   .carousel_2 img{
+       content: url(../images/category_mountain/categorie_slideshow_2_1500px.jpg)
+   }
+
+   .carousel_3 img{
+       content: url(../images/category_mountain/categorie_slideshow_3_1500px.jpg)
+   }
+
+   .carousel_4 img{
+       content: url(../images/category_mountain/categorie_slideshow_4_1500px.jpg)
+   }
+
+   .carousel_5 img{
+       content: url(../images/category_mountain/categorie_slideshow_5_1500px.jpg)
+   }
+} */
+
+
 @media screen and (max-width: 992px) {
     .icon-info_1{
         top: 250%;
@@ -184,6 +230,29 @@
     .img-h{
         height: 110% !important;
     }
+}
+
+
+@media screen and (max-width: 800px) {
+    .carousel_1 img{
+       content: url(../images/category_mountain/categorie_slideshow_1_800px.jpg)
+   }
+
+   .carousel_2 img{
+       content: url(../images/category_mountain/categorie_slideshow_2_800px.jpg)
+   }
+
+   .carousel_3 img{
+       content: url(../images/category_mountain/categorie_slideshow_3_800px.jpg)
+   }
+
+   .carousel_4 img{
+       content: url(../images/category_mountain/categorie_slideshow_4_800px.jpg)
+   }
+
+   .carousel_5 img{
+       content: url(../images/category_mountain/categorie_slideshow_5_800px.jpg)
+   }
 }
 
 @media screen and (max-width: 768px) {
@@ -224,10 +293,6 @@
 @media screen and (max-width: 440px) {
     .padding-image-bwl{
         padding-top: 7vw;
-    }
-
-    .round-shape{
-        height: 250%;
     }
 
     .carousel_1 img{
