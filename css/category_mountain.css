@@ -231,23 +231,23 @@
     }
 
     .carousel_1 img{
-        content: url(../images/category_mountain/categorie_slideshow_1_500px.png)
+        content: url(../images/category_mountain/categorie_slideshow_1_500px.jpg)
     }
 
     .carousel_2 img{
-        content: url(../images/category_mountain/categorie_slideshow_2_500px.png)
+        content: url(../images/category_mountain/categorie_slideshow_2_500px.jpg)
     }
 
     .carousel_3 img{
-        content: url(../images/category_mountain/categorie_slideshow_3_500px.png)
+        content: url(../images/category_mountain/categorie_slideshow_3_500px.jpg)
     }
 
     .carousel_4 img{
-        content: url(../images/category_mountain/categorie_slideshow_4_500px.png)
+        content: url(../images/category_mountain/categorie_slideshow_4_500px.jpg)
     }
 
     .carousel_5 img{
-        content: url(../images/category_mountain/categorie_slideshow_5_500px.png)
+        content: url(../images/category_mountain/categorie_slideshow_5_500px.jpg)
     }
 }
 
