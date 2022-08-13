@@ -193,6 +193,28 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .carousel_1 img{
+       content: url(../images/category_culture/slider_img_1_800px.jpg)
+   }
+
+   .carousel_2 img{
+       content: url(../images/category_culture/slider_img_2_800px.jpg)
+   }
+
+   .carousel_3 img{
+       content: url(../images/category_culture/slider_img_3_800px.jpg)
+   }
+
+   .carousel_4 img{
+       content: url(../images/category_culture/slider_img_4_800px.jpg)
+   }
+
+   .carousel_5 img{
+       content: url(../images/category_culture/slider_img_5_800px.jpg)
+   }
+}
+
 @media screen and (max-width: 768px) {
     .slideshow-content-position{
         left: 0;
@@ -236,26 +258,6 @@
 @media screen and (max-width: 440px) {
     .padding-image-bwl{
         padding-top: 7vw;
-    }
-
-    .carousel_1 img{
-        content: url(../images/category_culture/slider_img_1_500px.jpg);
-    }
-
-    .carousel_2 img{
-        content: url(../images/category_culture/slider_img_2_500px.jpg);
-    }
-
-    .carousel_3 img{
-        content: url(../images/category_culture/slider_img_3_500px.jpg);
-    }
-
-    .carousel_4 img{
-        content: url(../images/category_culture/slider_img_4_500px.jpg);
-    }
-
-    .carousel_5 img{
-        content: url(../images/category_culture/slider_img_5_500px.jpg);
     }
 
     .decoration_1-position{

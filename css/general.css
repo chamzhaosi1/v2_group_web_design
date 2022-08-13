@@ -299,7 +299,7 @@
 }
 
 .bg-dropdown-yellow-width {
-  width: 200px !important;
+  width: fit-content !important;
 }
 
 .btn {

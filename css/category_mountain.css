@@ -173,50 +173,6 @@
     }
 }
 
-@media screen and (min-width: 1501px) {
-     .carousel_1 img{
-        content: url(../images/category_mountain/categorie_slideshow_1_1906px.jpg)
-    }
-
-    .carousel_2 img{
-        content: url(../images/category_mountain/categorie_slideshow_2_1906px.jpg)
-    }
-
-    .carousel_3 img{
-        content: url(../images/category_mountain/categorie_slideshow_3_1906px.jpg)
-    }
-
-    .carousel_4 img{
-        content: url(../images/category_mountain/categorie_slideshow_4_1906px.jpg)
-    }
-
-    .carousel_5 img{
-        content: url(../images/category_mountain/categorie_slideshow_5_1906px.jpg)
-    }
-}
-
-/* @media screen and (max-width: 1500px) {
-    .carousel_1 img{
-       content: url(../images/category_mountain/categorie_slideshow_1_1500px.jpg)
-   }
-
-   .carousel_2 img{
-       content: url(../images/category_mountain/categorie_slideshow_2_1500px.jpg)
-   }
-
-   .carousel_3 img{
-       content: url(../images/category_mountain/categorie_slideshow_3_1500px.jpg)
-   }
-
-   .carousel_4 img{
-       content: url(../images/category_mountain/categorie_slideshow_4_1500px.jpg)
-   }
-
-   .carousel_5 img{
-       content: url(../images/category_mountain/categorie_slideshow_5_1500px.jpg)
-   }
-} */
-
 
 @media screen and (max-width: 992px) {
     .icon-info_1{
@@ -293,26 +249,6 @@
 @media screen and (max-width: 440px) {
     .padding-image-bwl{
         padding-top: 7vw;
-    }
-
-    .carousel_1 img{
-        content: url(../images/category_mountain/categorie_slideshow_1_500px.jpg)
-    }
-
-    .carousel_2 img{
-        content: url(../images/category_mountain/categorie_slideshow_2_500px.jpg)
-    }
-
-    .carousel_3 img{
-        content: url(../images/category_mountain/categorie_slideshow_3_500px.jpg)
-    }
-
-    .carousel_4 img{
-        content: url(../images/category_mountain/categorie_slideshow_4_500px.jpg)
-    }
-
-    .carousel_5 img{
-        content: url(../images/category_mountain/categorie_slideshow_5_500px.jpg)
     }
 }
 
