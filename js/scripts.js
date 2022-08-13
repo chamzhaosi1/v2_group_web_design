@@ -1,7 +1,13 @@
 window.addEventListener("scroll", function () {
-  var t = document.querySelector("#back-top");
-  t.classList.toggle("sticky", window.scrollY > 100);
+  var top = document.querySelector("#back-top");
+  top.classList.toggle("sticky", window.scrollY > 100);
+  var left = document.querySelector(".rounded_icon_left");
+  left.classList.toggle("sticky", window.scrollY > 100);
+  var right = document.querySelector(".rounded_icon_right");
+  right.classList.toggle("sticky", window.scrollY > 100);
 })
+
+
 
 
 // https://bootstrap-menu.com/detail-autohide.html
