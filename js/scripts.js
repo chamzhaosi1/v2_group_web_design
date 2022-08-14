@@ -1,10 +1,10 @@
 window.addEventListener("scroll", function () {
   var top = document.querySelector("#back-top");
   top.classList.toggle("sticky", window.scrollY > 100);
-  var left = document.querySelector(".rounded_icon_left");
-  left.classList.toggle("sticky", window.scrollY > 100);
-  var right = document.querySelector(".rounded_icon_right");
-  right.classList.toggle("sticky", window.scrollY > 100);
+  // var left = document.querySelector(".rounded_icon_left");
+  // left.classList.toggle("sticky", window.scrollY > 100);
+  // var right = document.querySelector(".rounded_icon_right");
+  // right.classList.toggle("sticky", window.scrollY > 100);
 })
 
 

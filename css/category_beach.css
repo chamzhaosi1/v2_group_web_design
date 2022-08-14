@@ -143,6 +143,18 @@
     100% {transform: scale(1); color: #6f47d6; left: 31%}
 }
 
+/* Gallery */
+.gallery .item img {
+    border-radius: 20px;
+}
+
+.gallery .item {
+    transition: .5s ease-in-out;
+}
+.gallery .item:hover {
+    filter: brightness(80%)
+}
+/* Gallery */
 
 @media screen and (min-width: 3800px) {
     #second_container h1{

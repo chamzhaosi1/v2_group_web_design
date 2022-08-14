@@ -32,10 +32,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- Fancybox CSS -->
-    <link rel="stylesheet" href="@@path/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <!-- Fancybox JS -->
-    <script src="@@path/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <script src="js/scripts.js"></script>
   </head>
 
@@ -324,40 +325,52 @@
           Walking on the beach, listening to the sound of waves, relaxing your mind. Put down your responsible, worry, and enjoy your beach traveling. Everything will be good. Perhaps you can try to share anything with your forever friend, "The Sea". Because you are on alone. 
           </p>
         </div>
-        <div class="d-block pb-5">
+        <div class="gallery d-block pb-5">
           <div class="container d-lg-flex d-block justify-content-center pb-3">
               <div class="d-block pe-3">
-                <a href="../../assets/img/conference-office.jpg" class="mb-4 col-6 col-sm-4 img-fluid"
-                    data-fancybox="images" data-caption="Conference Space">
+                <a href="images/category_beach/second_img_1_fullsize.jpg" class="w-100 col-6 col-sm-4 d-none d-lg-block img-fluid fancybox" data-fancybox="gallery_1">
                     <img class="mb-3 rounded-3" src="images/category_beach/second_img_1.jpg" alt="" width="100%">
-                </a>
-                  
+                </a>  
+                <a href="images/category_beach/second_img_1_fullsize.jpg" class="w-100 col-6 col-sm-4 d-block d-lg-none img-fluid fancybox" data-fancybox="gallery_2">
+                  <img class="mb-3 rounded-3" src="images/category_beach/second_img_1.jpg" alt="" width="100%">
+              </a>
                   <div class="d-flex">
-                      <div class="d-block d-lg-none">
-                          <img class="pe-3 rounded-3" src="images/category_beach/second_img_3.jpg" alt="" width="100%">
+                      <div class="d-block d-lg-none w-50">
+                        <a href="images/category_beach/second_img_3_fullsize.jpg" class="fancybox" data-fancybox="gallery_2">
+                          <img class="pe-3 rounded-3" src="images/category_beach/second_img_3_copy2.jpg" alt="" width="100%">
+                        </a>
+                        <a href="images/category_beach/second_img_5_fullsize.jpg" class="fancybox" data-fancybox="gallery_2">
                           <img class="pe-3 pt-4 pt-md-3 rounded-3" src="images/category_beach/second_img_5.jpg" alt="" width="100%">
+                        </a>
                       </div>
-                      <img class="pe-1 d-none d-lg-block rounded-3" src="images/category_beach/second_img_3.jpg" alt="" width="50%">
-                      <img class="d-block d-lg-none rounded-3" src="images/category_beach/second_img_2.jpg" alt="" width="50%">
-                      <img class="ms-2 d-none d-lg-block rounded-3" src="images/category_beach/second_img_4.jpg" alt="" width="50%">
+                      <a href="images/category_beach/second_img_3_fullsize.jpg" class="d-none d-lg-block w-50 fancybox" data-fancybox="gallery_1">
+                        <img class="pe-1 d-none d-lg-block rounded-3" src="images/category_beach/second_img_3.jpg" alt="" width="100%">
+                      </a>
+                      <a href="images/category_beach/second_img_2_fullsize.jpg" class="d-block d-lg-none fancybox w-50" data-fancybox="gallery_2">
+                        <img class="d-block d-lg-none rounded-3" src="images/category_beach/second_img_2.jpg" alt="" width="100%">
+                      </a>
+                      <a href="images/category_beach/second_img_4_fullsize.jpg" class="w-lg-100 w-50 ms-2 d-none d-lg-block rounded-3 fancybox" data-fancybox="gallery_1">
+                        <img class="d-none d-lg-block rounded-3" src="images/category_beach/second_img_4.jpg" alt="" width="100%">
+                      </a>
+
                   </div>
               </div>
-              <div class="d-lg-block d-none">
-                  <img class="rounded-3" src="images/category_beach/second_img_2.jpg" alt="" width="100%">
-              </div>
+              <a href="images/category_beach/second_img_2_fullsize.jpg" class="d-lg-block d-none fancybox" data-fancybox="gallery_1">
+                <img class="rounded-3" src="images/category_beach/second_img_2.jpg" alt="" width="100%">
+              </a>
           </div>
           <div class="container d-flex d-lg-none">
-              <div class="container ps-0"> 
-                  <img class="rounded-3" src="images/category_beach/second_img_6.jpg" alt="" width="100%">
-              </div>
+            <a href="images/category_beach/second_img_6_fullsize.jpg" class="container ps-0 fancybox" data-fancybox="gallery_2">
+              <img class="rounded-3" src="images/category_beach/second_img_6.jpg" alt="" width="100%">
+            </a>
           </div>
           <div class="container d-none d-lg-flex justify-content-center">
-              <div class="me-3">
-                  <img class="rounded-3" src="images/category_beach/second_img_5_mobile.jpg" alt="" width="100%">
-              </div>
-              <div>
-                  <img class="rounded-3" src="images/category_beach/second_img_6.jpg" alt="" width="100%">
-              </div>
+            <a href="images/category_beach/second_img_5_fullsize.jpg" class="me-3 fancybox" data-fancybox="gallery_1">
+              <img class="rounded-3" src="images/category_beach/second_img_5_mobile.jpg" alt="" width="100%">
+            </a>
+            <a href="images/category_beach/second_img_6_fullsize.jpg" class="fancybox" data-fancybox="gallery_1">
+              <img class="rounded-3" src="images/category_beach/second_img_6.jpg" alt="" width="100%">
+            </a>
           </div>
         </div>
         
