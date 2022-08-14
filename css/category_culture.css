@@ -145,10 +145,19 @@
     100% {transform: scale(1); color: #f08b54; left:30%}
 }
 
+.second_container img{
+    filter: grayscale(100%);
+}
+
+.second_container img:hover{
+    filter: grayscale(0%);
+    transition: 1s;
+}
+
 
 @media screen and (min-width: 3800px) {
     #second_container h1{
-        font-size: 1vw !important;
+        font-size: 2vw !important;
     }
 
     #second_container h2{
@@ -176,7 +185,7 @@
     }
     
     .padding-image-bwl{
-        padding-top: 8vw;
+        padding-top: 800px;
         padding-bottom: 2vw;
     }
 }
