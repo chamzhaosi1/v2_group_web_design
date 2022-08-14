@@ -401,6 +401,35 @@
   display: block;
 }
 
+.left_arrow img{
+  transform: rotateZ(270deg);
+}
+
+.prev-btn:hover .left_arrow{
+  animation: left_arrow_amination 1s infinite;
+}
+
+@keyframes left_arrow_amination {
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(10px);}
+  100% {transform: translateX(0px);}
+}
+
+
+.right_arrow img{
+  transform: rotateZ(90deg);
+  background-color: transparent;
+}
+
+.next-btn:hover .right_arrow{
+  animation: right_arrow_amination 1s infinite;
+}
+
+@keyframes right_arrow_amination {
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(-10px);}
+  100% {transform: translateX(0px);}
+}
 
 @keyframes backtop-rotate {
   0% {

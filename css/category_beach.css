@@ -156,6 +156,14 @@
 }
 /* Gallery */
 
+.prev-btn{
+    background-image: linear-gradient(to right, rgba(191, 77, 42, 0.7) , rgba(63, 201, 50,0.7));
+}
+
+.next-btn{
+    background-image: linear-gradient(to right, rgba(222, 205, 73,0.7),  rgba(163, 78, 39, 0.7));
+}
+
 @media screen and (min-width: 3800px) {
     #second_container h1{
         font-size: 2vw !important;
