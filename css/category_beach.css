@@ -166,7 +166,7 @@
 
 @media screen and (min-width: 3800px) {
     #second_container h1{
-        font-size: 2vw !important;
+        font-size: 1.5vw !important;
     }
 
     #second_container h2{
@@ -291,11 +291,12 @@
 
 .card {
     min-width: 300px !important;
+    transition: 1s;
 }
 
 .card .content{
     height: 0px !important;
-    width: fit-content !important;
+    width: 100% !important;
     padding: 0px;
     visibility: hidden;
     transform: translateX(-100%);
@@ -311,6 +312,7 @@
     transition: 1s;
 }
 
+
 .card:hover .content .card-title,
 .card:hover .content .card-text,
 .card:hover .content .btn{
@@ -320,7 +322,7 @@
     
 }
 
-.card.hover .content {
-    height: 20px !important;
+.card.hover{
+    transform: scale(1.05);
     transition: 1s;
 }
