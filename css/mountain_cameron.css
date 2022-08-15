@@ -44,7 +44,14 @@ body, html {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
-  
+  .prev-btn{
+    /* background-image: linear-gradient(to right, rgba(191, 77, 42, 0.7) , rgba(63, 201, 50,0.7)); */
+    background-image: linear-gradient(to right, rgba(26, 26, 28, 0.7),  rgba(123, 58, 237, 0.7));
+}
+
+.next-btn{
+    background-image: linear-gradient(to right, rgba(177, 175, 54, 0.7) , rgba(246, 220, 23, 0.7));
+}
   /* Modal Content (Image) */
   .modal-content {
     margin: auto;
