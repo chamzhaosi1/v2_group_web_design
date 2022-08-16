@@ -117,12 +117,11 @@
 }
 
 .prev-btn{
-    /* background-image: linear-gradient(to right, rgba(191, 77, 42, 0.7) , rgba(63, 201, 50,0.7)); */
-    background-image: linear-gradient(to right, rgba(222, 205, 73,0.7),  rgba(163, 78, 39, 0.7));
+    background-image: linear-gradient(to right, rgba(163, 78, 39, 0.7), rgba(222, 205, 73,0.7));
 }
 
 .next-btn{
-    background-image: linear-gradient(to right, rgba(50, 171, 201, 0.7) , rgba(227, 197, 66, 0.7));
+    background-image: linear-gradient(to right, rgba(227, 197, 66, 0.7), rgba(50, 171, 201, 0.7));
 }
   
 
