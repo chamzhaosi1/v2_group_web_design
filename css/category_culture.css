@@ -147,9 +147,20 @@
 
 .second_container img{
     filter: grayscale(100%);
+    transition: 1s;
 }
 
 .second_container img:hover{
+    filter: grayscale(0%);
+    transition: 1s;
+}
+
+.padding-image-bwl img{
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.padding-image-bwl img:hover{
     filter: grayscale(0%);
     transition: 1s;
 }
