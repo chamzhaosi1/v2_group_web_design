@@ -285,7 +285,12 @@
     }
 
     .icon-info_1{
-        top: -60px;
+        top: -65px;
+        font-size: 25px;
+    }
+
+    .icon-info_2{
+        font-size: 25px;
     }
 }
 
