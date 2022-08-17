@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+.cm{
+  margin-top: 0%;
+}
+
 .background1 {
   background-image: url(../images/culture_batu/b1.png);
   background-size: contain;
@@ -33,5 +37,9 @@
 
   .carousel_3 img {
     content: url(../images/culture_batu/h6-500.jpg);
+  }
+
+  .cm{
+    margin-top: 5%;
   }
 }
