@@ -170,8 +170,7 @@
 }
 
 .next-btn{
-    
-    background-image: linear-gradient(to right, rgba(191, 77, 42, 0.7) , rgba(63, 201, 50,0.7));
+    background-image: linear-gradient(to right, rgba(53, 212, 185,0.7), rgba(64, 166, 43, 0.7));
 }
 
 @media screen and (min-width: 3800px) {
@@ -294,6 +293,11 @@
 
     .icon-info_1{
         top: -60px;
+        font-size: 25px;
+    }
+
+    .icon-info_2{
+        font-size: 25px;
     }
 }
 
