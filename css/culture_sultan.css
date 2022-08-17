@@ -9,8 +9,24 @@
   justify-content: center;
 }
 
-.cm{
+.cm {
   margin-top: 0%;
+}
+
+.prev-btn {
+  background-image: linear-gradient(
+    to right,
+    rgba(148, 180, 159, 0.7),
+    rgba(206, 229, 208, 0.7)
+  );
+}
+
+.next-btn {
+  background-image: linear-gradient(
+    to right,
+    rgba(252, 248, 232, 0.7),
+    rgba(236, 179, 144, 0.7)
+  );
 }
 
 .background1 {
@@ -39,7 +55,7 @@
     content: url(../images/culture_sultan/m3-500.jpg);
   }
 
-  .cm{
+  .cm {
     margin-top: 3%;
   }
 }
