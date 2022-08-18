@@ -148,10 +148,6 @@
 
     .food .row {
         padding-top: 1.5rem;
+        padding-bottom: 3rem;
     }
 }
-
-@media screen and (max-width: 400px) {
-}
-
-
